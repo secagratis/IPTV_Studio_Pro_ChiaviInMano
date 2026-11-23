@@ -1,0 +1,18 @@
+IPTV Studio Pro — Pacchetto Compilazione & Distribuzione Chiavi in Mano
+========================================================================
+
+Contenuto dell'archivio:
+1. 1_COMPILA_TUTTO_CHIAVI_IN_MANO.bat -> Avvia con doppio clic:
+   - Verifica/installa automaticamente PyInstaller se assente.
+   - Cerca ffmpeg.exe, ffprobe.exe, ffplay.exe (e se mancano, offre di scaricarli ed estrarli da solo!).
+   - Applica l'icona personalizzata iptv_studio_pro.ico.
+   - Genera l'eseguibile singolo auto-contenuto in: Release_Unica\IPTV_Studio_Pro.exe
+   - Se hai Inno Setup 6, compila anche l'installer in: Installer_Output\IPTV_Studio_Pro_Setup.exe
+   - Apre automaticamente la cartella finale Release_Unica\.
+
+2. 2_CREA_SOLO_INSTALLER.bat -> Crea/ricrea solo il setup Windows (IPTV_Studio_Pro_Setup.exe)
+   partendo da Release_Unica\IPTV_Studio_Pro.exe.
+
+3. iptv_checker_2.py           -> Sorgente completo con supporto _MEIPASS per --onefile.
+4. iptv_studio_pro.ico         -> Icona multi-risoluzione (16..128px) per .exe e setup.
+5. installer_iptv_studio_pro.iss -> Configurazione Inno Setup 6.
